@@ -5,7 +5,6 @@ W = tf.Variable([0.3],  dtype=tf.float32)
 b = tf.Variable([-0.3],  dtype=tf.float32)
 
 x = tf.placeholder(dtype=tf.float32)
-
 linear_model = W * x + b
 
 y = tf.placeholder(dtype=tf.float32)
@@ -21,7 +20,6 @@ train = optimizer.minimize(loss)
 # training data
 X_train = [1, 2, 3, 4]
 y_train = [0, -1, -2, -3]
-
 
 init = tf.global_variables_initializer()
 
