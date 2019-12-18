@@ -4,7 +4,6 @@ import matplotlib.image as mp_img
 import os
 
 filename = './pishi.jpg'
-
 image = plt.imread(filename)
 
 print('image shape:', image.shape)
@@ -13,16 +12,14 @@ print('image array:', image)
 plt.imshow(image)
 plt.show()
 
-
 x = tf.Variable(image, name='x')
-
 init = tf.global_variables_initializer()
 
 with tf.Session() as sess:
     sess.run(init)
 
     # original axis 0, 1, 2
-    # transpose = tf.transpose(x, perm=[1, 0, 2]) OR
+    # we also could use this: transpose = tf.transpose(x, perm=[1, 0, 2]) 
     transpose = tf.image.transpose_image(x)
 
     result = sess.run(transpose)
@@ -30,11 +27,3 @@ with tf.Session() as sess:
     print('shape of the transposed image:', result.shape)
     plt.imshow(result)
     plt.show()
-
-
-
-
-
-
-
-
