@@ -1,5 +1,5 @@
 # TensorFlow
-Sample code for TensorFlow  (Personal Use)
+Sample code for TensorFlow
 
 1-11: Foundations of TensorFlow
 
