@@ -1,5 +1,4 @@
-# TensorFlow
-TensorFlow Examples:
+# TensorFlow Examples:
 
 1-11: Foundations of TensorFlow
 
