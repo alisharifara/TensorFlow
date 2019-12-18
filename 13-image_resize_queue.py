@@ -1,7 +1,7 @@
 import tensorflow as tf
 from PIL import Image
 
-# reads the original images from the directory
+# reads the original images
 list_of_images = ['./images/cat1.jpg',
                   './images/cat2.jpg',
                   './images/cat3.jpg',
