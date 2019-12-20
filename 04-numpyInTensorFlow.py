@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
+#start the session
 sess = tf.Session()
 
 zeroD = np.array(30, dtype=np.int32)
