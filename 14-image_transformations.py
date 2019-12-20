@@ -1,8 +1,7 @@
+# this program performs some image transformations like: resize, flip, and crop, etc.
+
 import tensorflow as tf
 from PIL import Image
-
-# this program performs some image transformations like: resize, flip, and crop
-
 
 class ImageTransformation:
 
