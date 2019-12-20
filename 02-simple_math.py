@@ -19,13 +19,14 @@ print('prod y: ', session.run(prod_y))
 print('sum(x)/prod(y): ', session.run(final_div))
 print('mean(sum(x), prod(y)) : ', session.run(final_mean))
 
-writer = tf.summary.FileWriter('./m2_example4', session.graph)
+# output to tensorboard
+writer = tf.summary.FileWriter('./output', session.graph)
 
 writer.close()
 session.close()
 
 # then, I need to write the following code in the terminal
-# tensorboard --logdir="m2_example4"
+# tensorboard --logdir="output"
 
 
 
